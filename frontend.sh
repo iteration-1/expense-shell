@@ -11,7 +11,7 @@ curl -o /tmp/frontend.zip https://expense-artifacts.s3.amazonaws.com/expense-fro
 
 msg "extract the frontend"
 cd /usr/share/nginx/html
-unzip /tm/frontend.zip
+unzip /tmp/frontend.zip
 
 msg "add conf file to location"
 cp /files/expense.conf /etc/nginx/default.d/expense.conf
