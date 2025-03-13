@@ -5,7 +5,7 @@ msg "disable current nodejs version"
 dnf module disable nodejs -y
 
 msg " enable nodejs 20"
-dnf moduel enable nodejs:20 -y
+dnf module enable nodejs:20 -y
 
 msg "install nodejs"
 dnf install nodejs -y
@@ -20,7 +20,7 @@ fi
 msg "make app dir"
 mkdir -p /app
 
-get_code ()
+get_code
 
 msg "npm install"
 cd /app
