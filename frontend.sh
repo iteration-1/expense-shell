@@ -14,5 +14,6 @@ cd /usr/share/nginx/html
 unzip /tmp/frontend.zip
 
 msg "add conf file to location"
+cd
 #cp /files/expense.conf /etc/nginx/default.d/expense.conf
 pwd
