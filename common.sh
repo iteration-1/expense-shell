@@ -16,5 +16,5 @@ get_code () {
 
   msg "unzip the code"
   cd /app
-  unzip /tmp/${component}.zip
+  unzip /tmp/${component}.zip -y
 }
