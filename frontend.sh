@@ -15,5 +15,4 @@ unzip /tmp/frontend.zip
 
 msg "add conf file to location"
 cd
-#cp /files/expense.conf /etc/nginx/default.d/expense.conf
-pwd
+cp ${script_location}/files/expense.conf /etc/nginx/default.d/expense.conf

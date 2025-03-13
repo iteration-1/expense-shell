@@ -1,5 +1,6 @@
 #!/usr/bin bash
 
+script_location = $(pwd)
 msg () {
   if [ -z "$1" ]; then
     echo -e "\e[31mmissing definition\e[0m"
