@@ -40,4 +40,4 @@ dnf install mysql -y
 msg "load schema"
 mysql -h 172.31.86.12 -uroot -pExpenseApp@1 < /app/schema/backend.sql
 
-
+systemctl restart backend
