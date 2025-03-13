@@ -16,3 +16,6 @@ unzip /tmp/frontend.zip
 msg "add conf file to location"
 cd
 cp ${script_location}/files/expense.conf /etc/nginx/default.d/expense.conf
+
+dnf "enable and restart nginx"
+systemctl enable nginx && systemctl restart nginx
