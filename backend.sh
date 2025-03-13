@@ -14,6 +14,7 @@ msg "useradd"
 id expense
 if [ $? -ne 0 ]; then
   useradd expense
+  echo "user expense added"
 fi
 
 msg "make app dir"
@@ -22,6 +23,7 @@ mkdir -p /app
 get_code ()
 
 msg "npm install"
+cd /app
 npm install
 
 msg "copy systemd file for backend"
